@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(251, 251, 251);
+}
+h1{
+    color: #ef3f3f;
+}
+.navbar-brand figure img{
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 20%;
+}
+
+.box-shadow-d{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
