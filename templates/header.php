@@ -1,3 +1,9 @@
+<?php
+    if(isset($_SESSION['msg'])){
+        $printMsg = $_SESSION['msg'];
+        $_SESSION['msg'] = null;
+    }
+?>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">

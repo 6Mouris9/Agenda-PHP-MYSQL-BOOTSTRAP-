@@ -1,5 +1,10 @@
 <!-- Configuracao padrao de cabecalho, inclusao e link de arquivos -->
-<?php include_once("./config/url.php");?>
+<?php 
+include_once("config/url.php");
+include_once("config/connection.php");
+include_once("config/process.php");
+?>
+
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
