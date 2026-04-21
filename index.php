@@ -12,14 +12,13 @@
     <?php include_once("templates/header.php");
 
     if (isset($printMsg) && $printMsg != ''): ?>
-        <p id="msg"><?= $printMsg; ?></p> //imprimir mensagem da sessao
+        <p id="msg"><?= $printMsg; ?></p> 
     <?php
     endif;
     ?>
-    <p id="msg">Testando mensagem</p>
     <h1 id="main-title">Minha Agenda</h1>
+
     <?php if (count($contacts) > 0): ?>
-        <p>TEM CONTATOS</p>
         <table class="table" id="contacts-table">
             <thead>
                 <tr>
@@ -40,7 +39,11 @@
                         <td class="actions">
                             <a href="show.php?id=<?= $contact['id'] ?>"><i class="fas fa-eye check-icon"></i></a>
                             <a href="edit.php?id=<?= $contact['id'] ?>"><i class="far fa-edit edit-icon"></i></a>
-                            <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
+                            <form action="config\process.php" method="POST" class="delete-form">
+                                <input type="hidden" name="type" value="delete">
+                                <input type="hidden" name="id" value="<?= $contact['id']?>">    
+                                <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -51,7 +54,6 @@
                 adicionar</a></p>
     <?php endif; ?>
 
-    <?= BASE_PATH; ?>
 </body>
 
 </html>

@@ -11,7 +11,7 @@
 <body>
     <?php include_once("templates/header.php");
     if (isset($printMsg) && $printMsg != ''): ?>
-        <p id="msg"><?= $printMsg; ?></p> //imprimir mensagem da sessao
+        <p id="msg"><?= $printMsg; ?></p> 
         <?php
     endif;
     ?>

@@ -104,3 +104,21 @@ h1{
 #back-link:hover{
     text-decoration: none;
 }
+
+/* CREATE PAGE */
+#create-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.delete-form{
+    display: inline-block;
+}
+
+/* MOBILE */
+@media(max-width: 480px){
+    #home-link{
+        display: none;
+    }
+    
+}

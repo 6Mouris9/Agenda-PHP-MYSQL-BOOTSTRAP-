@@ -15,7 +15,7 @@
         <div>
             <div class="navbar-nav">
                 <a href="<?= BASE_URL;?>/index.php" class="nav-link" id="home-link">Agenda</a>
-                <a href="<?= BASE_URL;?>/create.php" class="nav-link" id="home-link">Adicionar</a>
+                <a href="<?= BASE_URL;?>/create.php" class="nav-link">Adicionar</a>
             </div>
         </div>
     </nav>
